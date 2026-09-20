@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bali Scenic Tours - Website Tour & Aktivitas Profesional</title>
+    <!-- Google Fonts & Font Awesome Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo" onclick="scrollToSection('hero')">
+                <i class="fa-solid fa-compass fa-spin-pulse" style="--fa-animation-duration: 8s; color: #00d2ff;"></i>
+                <span>Bali<strong>Scenic</strong></span>
+            </div>
+            <nav class="nav-links">
+                <a href="#tours"><i class="fa-solid fa-map-location-dot"></i> Paket Tour</a>
+                <a href="#activities"><i class="fa-solid fa-person-running"></i> Aktivitas</a>
+                <a href="#features"><i class="fa-solid fa-shield-halved"></i> Keunggulan</a>
+                <a href="#contact"><i class="fa-solid fa-headset"></i> Kontak</a>
+            </nav>
+            <a href="https://wa.me/6282145423164?text=Halo%20Bali%20Scenic%20Tours,%20saya%20ingin%20bertanya%20mengenai%20paket%20tour." target="_blank" class="btn-nav-wa">
+                <i class="fa-brands fa-whatsapp"></i> Chat WhatsApp
+            </a>
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Drawer -->
+    <div class="mobile-nav" id="mobile-nav">
+        <a href="#tours" onclick="closeMobileNav()"><i class="fa-solid fa-map-location-dot"></i> Paket Tour</a>
+        <a href="#activities" onclick="closeMobileNav()"><i class="fa-solid fa-person-running"></i> Aktivitas Bali</a>
+        <a href="#features" onclick="closeMobileNav()"><i class="fa-solid fa-shield-halved"></i> Keunggulan</a>
+        <a href="#contact" onclick="closeMobileNav()"><i class="fa-solid fa-headset"></i> Kontak</a>
+        <a href="https://wa.me/6281234567890" target="_blank" class="btn-wa-mobile">
+            <i class="fa-brands fa-whatsapp"></i> Hubungi via WhatsApp
+        </a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-badge"><i class="fa-solid fa-star"></i> Private Tour & Activity Specialist</span>
+            <h1>Jelajahi Keindahan Bali Bersama Driver & Tour Guide Profesional</h1>
+            <p>Pesan paket perjalanan privat custom tanpa ribet. Pilih rujukan destinasi impianmu dan tambahkan aktivitas seru favoritmu langsung via WhatsApp!</p>
+            <div class="hero-buttons">
+                <a href="#tours" class="btn-primary-hero"><i class="fa-solid fa-route"></i> Lihat Paket Tour</a>
+                <a href="#activities" class="btn-secondary-hero"><i class="fa-solid fa-bolt"></i> Aktivitas Seru</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <i class="fa-solid fa-car-side"></i>
+                    <div>
+                        <strong>100% Private</strong>
+                        <span>Mobil + BBM + Driver</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <i class="fa-solid fa-user-check"></i>
+                    <div>
+                        <strong>15.000+</strong>
+                        <span>Wisatawan Puas</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <i class="fa-solid fa-money-bill-wave"></i>
+                    <div>
+                        <strong>Tanpa DP / Murah</strong>
+                        <span>Bayar saat di Bali</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Paket Tour -->
+    <section class="container section-padding" id="tours">
+        <div class="section-title text-center">
+            <span class="sub-title">DESTINASI POPULER</span>
+            <h2>Pilihan Paket Tour Terbaik</h2>
+            <p>Harga terjangkau per kendaraan privat (Kapasitas hingga 6 orang). Bisa dikustomisasi sesuai keinginanmu.</p>
+        </div>
+
+        <div class="tour-grid" id="tour-container">
+            <!-- Di-render otomatis via app.js -->
+        </div>
+    </section>
+
+    <!-- Section Aktivitas Seru -->
+    <section class="activities-section section-padding" id="activities">
+        <div class="container">
+            <div class="section-title text-center">
+                <span class="sub-title" style="color: #00d2ff;">PETUALANGAN TANTANGAN</span>
+                <h2 style="color: white;">Aktivitas & Wahana di Bali</h2>
+                <p style="color: #cbd5e1;">Pilih dan tambahkan aktivitas seru ini ke dalam paket tour harianmu atau pesan aktivitasnya saja!</p>
+            </div>
+
+            <div class="activity-grid" id="activity-container">
+                <!-- Di-render otomatis via app.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Keunggulan -->
+    <section class="container section-padding" id="features">
+        <div class="section-title text-center">
+            <span class="sub-title">MENGAPA PILIH KAMI</span>
+            <h2>Layanan Terbaik untuk Liburan Anda</h2>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-car"></i></div>
+                <h3>Mobil Nyaman & Bersih</h3>
+                <p>Armada terawat lengkap dengan AC dingin, BBM, serta pemandu jalan yang berpengalaman.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-clock"></i></div>
+                <h3>Jadwal Fleksibel</h3>
+                <p>Tour privat penuh tanpa digabung rombongan lain. Waktu penjemputan bisa disesuaikan.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                <h3>Pemesanan Cepat WA</h3>
+                <p>Tanpa pendaftaran rumit, tanpa keranjang belanja. Pesan tiket dan konfirmasi via WhatsApp detik ini juga.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                <h3>Harga Transparan</h3>
+                <p>Harga jelas tanpa biaya tersembunyi. Dapatkan penawaran harga terbaik untuk rombongan keluarga.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Detail Tour & Custom Pemesanan -->
+    <div class="modal-backdrop" id="tour-modal">
+        <div class="modal-box">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <div class="modal-header" id="modal-header">
+                <!-- Header Gambar & Judul -->
+            </div>
+            <div class="modal-body">
+                <div class="modal-section">
+                    <h4><i class="fa-solid fa-location-dot"></i> Rencana Perjalanan (Itinerary):</h4>
+                    <ul class="itinerary-list" id="modal-itinerary">
+                        <!-- List Itinerary -->
+                    </ul>
+                </div>
+
+                <div class="modal-section">
+                    <h4><i class="fa-solid fa-square-plus"></i> Tambah Aktivitas Opsional (Klik Tambah):</h4>
+                    <p class="modal-sub-info">Pilih aktivitas tambahan dari daftar di bawah untuk digabungkan ke paket ini:</p>
+                    <div class="modal-activities-list" id="modal-activity-options">
+                        <!-- Checklist Aktivitas -->
+                    </div>
+                </div>
+
+                <div class="modal-section order-form">
+                    <h4><i class="fa-solid fa-clipboard-user"></i> Detail Pemesan:</h4>
+                    <div class="form-group-grid">
+                        <div class="form-group">
+                            <label><i class="fa-solid fa-calendar"></i> Tanggal Tour:</label>
+                            <input type="date" id="order-date" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fa-solid fa-users"></i> Jumlah Peserta:</label>
+                            <input type="number" id="order-pax" class="form-control" value="2" min="1">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fa-solid fa-comment-dots"></i> Catatan Khusus (Optional):</label>
+                        <input type="text" id="order-note" class="form-control" placeholder="Contoh: Jemput di Hotel Kuta jam 8 pagi">
+                    </div>
+                </div>
+
+                <div class="price-summary-box">
+                    <div class="price-row">
+                        <span>Harga Base Tour:</span>
+                        <strong id="base-price-display">Rp 0</strong>
+                    </div>
+                    <div class="price-row">
+                        <span>Tambahan Aktivitas:</span>
+                        <strong id="extra-price-display">Rp 0</strong>
+                    </div>
+                    <hr>
+                    <div class="price-row total-row">
+                        <span>Total Estimasi:</span>
+                        <strong id="total-price-display">Rp 0</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn-wa-submit" onclick="submitTourOrderToWA()">
+                    <i class="fa-brands fa-whatsapp"></i> Pesan Sekarang via WhatsApp
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Bali%20Scenic%20Tours,%20saya%20ingin%20konsultasi%20paket%20wisata." target="_blank" class="floating-wa" title="Chat WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="wa-tooltip">Pesan Langsung via WA!</span>
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <div class="logo">
+                    <i class="fa-solid fa-compass" style="color: #00d2ff;"></i>
+                    <span>Bali<strong>Scenic</strong></span>
+                </div>
+                <p style="margin-top: 15px; color: #94a3b8; font-size: 0.9rem;">
+                    Penyedia layanan wisata privat terbaik di Bali. Menghadirkan pengalaman berlibur yang aman, nyaman, dan berkesan.
+                </p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigasi</h4>
+                <ul>
+                    <li><a href="#tours">Paket Tour Bali</a></li>
+                    <li><a href="#activities">Aktivitas Seru</a></li>
+                    <li><a href="#features">Keunggulan Kami</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Kontak Layanan</h4>
+                <p><i class="fa-brands fa-whatsapp"></i> +62 812-3456-7890</p>
+                <p><i class="fa-solid fa-envelope"></i> booking@baliscenictours.com</p>
+                <p><i class="fa-solid fa-location-dot"></i> Jl. Raya Denpasar - Ubud No. 88, Bali</p>
+            </div>
+        </div>
+        <div class="copyright text-center">
+            <p>&copy; 2026 Bali Scenic Tours & Travel. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
