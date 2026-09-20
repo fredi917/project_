@@ -1,5 +1,5 @@
 // Nomor WhatsApp Tujuan (Ganti sesuai nomor WhatsApp Anda)
-const WHATSAPP_NUMBER = "6281234567890";
+const WHATSAPP_NUMBER = "6282145423164";
 
 // Data Paket Tour Sesuai tugas.txt + Harga Lengkap
 const tourPackages = [
